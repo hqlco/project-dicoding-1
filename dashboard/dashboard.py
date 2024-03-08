@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-main_data = pd.read_csv('./dashboard/main_data.csv')
+main_data = pd.read_csv('main_data.csv')
 
 
 sellers_in_cities = main_data.groupby(by="seller_city").seller_id.nunique().sort_values(ascending=False).reset_index()
